@@ -7,13 +7,9 @@ export const navigationRef =
     NavigationContainerRefWithCurrent<RootStackParamListType>
   >();
 
-const DELAY = 2000;
-
-export const navigate = (name: string): any => {
+export const navigate = (name: string): void => {
   if (navigationRef.isReady()) {
-    setTimeout(() => {
-      // @ts-ignore
-      navigationRef.navigate(name);
-    }, DELAY);
+    // @ts-ignore
+    navigationRef.navigate(name);
   }
 };

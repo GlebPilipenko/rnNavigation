@@ -10,7 +10,7 @@ const Drawer = createDrawerNavigator();
 
 export const RootDrawer = () => {
   return (
-    <NavigationContainer ref={navigationRef as any}>
+    <NavigationContainer ref={navigationRef}>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Profile" component={ProfileScreen} />

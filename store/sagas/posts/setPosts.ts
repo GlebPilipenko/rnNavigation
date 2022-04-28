@@ -1,5 +1,5 @@
-import {call, put, select} from 'redux-saga/effects';
-import {Route, StackKey} from '../../../enum';
+import {call, delay, put, select} from 'redux-saga/effects';
+import {Route, StackKey, TransitionDelay} from '../../../enum';
 import {PostsType} from '../../../types';
 import {setPostsAC} from '../../reducers';
 import {Posts} from '../../../services/api';
@@ -16,6 +16,7 @@ export default function* SetPostsSagaWorker(): SagaWorkerType<PostsType[]> {
     const updatedPosts = yield select(selectPosts);
 
     if (arePostsFull(updatedPosts)) {
+      yield delay(TransitionDelay.ToHomePage);
       yield navigate(StackKey.Home);
     }
   } catch (error) {
