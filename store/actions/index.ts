@@ -1,0 +1,1 @@
+export {setPostsAC} from './setPosts';

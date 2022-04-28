@@ -1,6 +1,6 @@
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParamListType} from 'src/types';
-import {StackKey} from 'src/enum';
+import {RootStackParamListType} from '../../../types';
+import {StackKey} from '../../../enum';
 
 export type ScreenContainerType = NativeStackNavigationProp<
   RootStackParamListType,
