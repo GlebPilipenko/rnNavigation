@@ -1,13 +1,13 @@
 import * as React from 'react';
 import 'react-native-gesture-handler';
 import {Provider} from 'react-redux';
-import {store} from './store';
-import {RootDrawer} from './navigation/drawer';
+import {RootDrawer} from './src/navigation/drawer';
+import {store} from './src/store';
 
-export default function App() {
+export const App = () => {
   return (
     <Provider store={store}>
       <RootDrawer />
     </Provider>
   );
-}
+};
