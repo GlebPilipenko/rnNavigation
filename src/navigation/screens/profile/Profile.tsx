@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {ProfileName} from '../../screens';
+import {ProfileName} from '@root//navigation/screens';
 import {createNativeStackNavigator} from 'react-native-screens/native-stack';
-import {StackKey} from '../../../enum';
+import {StackKey} from '@root/enum';
 import {Alert, Button} from 'react-native';
 
 const Stack = createNativeStackNavigator();

@@ -2,9 +2,13 @@ import * as React from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 
-import {HomeScreen, NotificationScreen, ProfileScreen} from '../../screens';
-import {SettingTab} from '../../tabs';
-import {navigationRef} from '../../../utils';
+import {navigationRef} from '@root/utils';
+import {SettingTab} from '@root/navigation/tabs';
+import {
+  HomeScreen,
+  NotificationScreen,
+  ProfileScreen,
+} from '@root/navigation/screens';
 
 const Drawer = createDrawerNavigator();
 

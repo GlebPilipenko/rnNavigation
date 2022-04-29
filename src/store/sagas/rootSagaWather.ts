@@ -1,5 +1,5 @@
 import {takeLatest} from 'redux-saga/effects';
-import {SagaActionKey} from '../../enum';
+import {SagaActionKey} from '@root/enum';
 import SetPostsSagaWorker from './posts/setPosts';
 
 export default function* rootSaga() {

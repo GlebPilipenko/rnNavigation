@@ -3,12 +3,12 @@ import {ReactNode, useEffect, useState} from 'react';
 import {RouteProp, useNavigation, useRoute} from '@react-navigation/native';
 import {Alert, Button, Text, View} from 'react-native';
 import {ScreenContainerType} from './types';
-import {StackKey} from '../../../enum';
-import {NavigationStackParamListType} from '../../../types';
+import {StackKey} from '@root/enum';
+import {NavigationStackParamListType} from '@root/types';
 import {styles} from './styles';
 
 export const ScreenContainer = ({children}: {children: ReactNode}) => {
-  const [isGoHomeCalled, setIsGoHomeCalled] = useState(false);
+  const [isGoHomeCalled, setIsGoHomeCalled] = useState<boolean>(false);
 
   const navigation = useNavigation<ScreenContainerType>();
   const route = useRoute<RouteProp<NavigationStackParamListType>>();

@@ -1,5 +1,5 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {PostsType} from '../../../types';
+import {PostsType} from '@root/types';
 
 type InitialStateType = {
   posts: PostsType[];

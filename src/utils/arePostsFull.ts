@@ -1,4 +1,4 @@
-import {PostsType} from '../types';
+import {PostsType} from '@root/types';
 
 const FULLED_POSTS_INDEX = 100;
 

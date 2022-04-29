@@ -1,4 +1,9 @@
+const path = require('path');
+
+const root = path.resolve(__dirname);
+
 module.exports = {
+  presets: ['module:metro-react-native-babel-preset'],
   plugins: [
     'react-native-reanimated/plugin',
     [
@@ -10,6 +15,15 @@ module.exports = {
         allowUndefined: true,
       },
     ],
+    [
+      'module-resolver',
+      {
+        root: [root],
+        alias: {
+          '@root': `${root}/src`,
+        },
+        extensions: ['.js', '.jsx', 'ts', '.tsx', '.ios.js', '.android.js'],
+      },
+    ],
   ],
-  presets: ['module:metro-react-native-babel-preset'],
 };

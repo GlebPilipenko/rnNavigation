@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {ScreenContainer} from '../../screens';
+import {ScreenContainer} from '@root/navigation/screens';
 import {useSelector} from 'react-redux';
-import {selectPosts} from '../../../store/selectors';
+import {selectPosts} from '@root/store/selectors';
 import {FlatList, SafeAreaView, Text} from 'react-native';
 
 export const HomeScreen = () => {

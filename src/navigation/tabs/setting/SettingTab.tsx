@@ -4,8 +4,8 @@ import {
   NotificationSettingsScreen,
   ProfileSettingsScreen,
   SettingScreen,
-} from '../../screens';
-import {StackKey} from '../../../enum';
+} from '@root//navigation/screens';
+import {StackKey} from '@root/enum';
 
 const Tab = createBottomTabNavigator();
 
