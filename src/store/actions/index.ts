@@ -1,1 +1,1 @@
-export {setPostsAC} from './setPosts';
+export { setPostsAC } from './setPosts';

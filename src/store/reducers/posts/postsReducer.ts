@@ -1,15 +1,15 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {PostsType} from '@root/types';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { PostsType } from '@root/types';
 
 type InitialStateType = {
   posts: PostsType[];
 };
 
-const initialState: InitialStateType = {posts: []};
+const initialState: InitialStateType = { posts: [] };
 
 const postsSlice = createSlice({
-  name: 'posts',
   initialState,
+  name: 'posts',
   reducers: {
     setPosts(state, action: PayloadAction<PostsType[]>) {
       state.posts = [...action.payload];
@@ -17,6 +17,6 @@ const postsSlice = createSlice({
   },
 });
 
-export const {setPosts: setPostsAC} = postsSlice.actions;
+export const { setPosts: setPostsAC } = postsSlice.actions;
 
 export default postsSlice;

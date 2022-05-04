@@ -1,1 +1,1 @@
-export {default as rootSagaWatcher} from './rootSagaWather';
+export { default as rootSagaWatcher } from './rootSagaWather';

@@ -1,10 +1,13 @@
 import * as React from 'react';
-import 'react-native-gesture-handler';
-import {Provider} from 'react-redux';
-import {store} from './src/store';
-import {RootDrawer} from './src/navigation/drawer';
 
-export const App = () => {
+import 'react-native-gesture-handler';
+
+import { RootDrawer } from '@root/navigation/drawer';
+import { store } from '@root/store';
+import { ReturnComponentType } from '@root/types';
+import { Provider } from 'react-redux';
+
+export const App = (): ReturnComponentType => {
   return (
     <Provider store={store}>
       <RootDrawer />

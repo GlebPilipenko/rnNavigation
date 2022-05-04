@@ -1,4 +1,4 @@
-import {StackKey} from '@root/enum';
+import { StackKey } from '@root/enum';
 
 export type RootStackParamListType = {
   [StackKey.Home]: undefined;

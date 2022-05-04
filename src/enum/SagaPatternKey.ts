@@ -1,3 +1,3 @@
-export enum SagaActionKey {
+export enum SagaPatternKey {
   SetPosts = '@@/set__posts',
 }

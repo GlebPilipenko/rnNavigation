@@ -1,5 +1,7 @@
-import {SagaActionKey} from '@root/enum';
+import { SagaPatternKey } from '@root/enum';
 
-export const setPostsAC = () => ({
-  type: SagaActionKey.SetPosts,
+type SetPostsACType = { type: SagaPatternKey.SetPosts };
+
+export const setPostsAC = (): SetPostsACType => ({
+  type: SagaPatternKey.SetPosts,
 });

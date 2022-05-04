@@ -1,3 +1,5 @@
+const HOME_PAGE_DELAY = 2000;
+
 export enum TransitionDelay {
-  ToHomePage = 2000,
+  ToHomePage = HOME_PAGE_DELAY,
 }

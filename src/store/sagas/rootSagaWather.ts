@@ -1,7 +1,9 @@
-import {takeLatest} from 'redux-saga/effects';
-import {SagaActionKey} from '@root/enum';
 import SetPostsSagaWorker from './posts/setPosts';
 
-export default function* rootSaga() {
-  yield takeLatest(SagaActionKey.SetPosts, SetPostsSagaWorker);
+import { SagaPatternKey } from '@root/enum';
+import { SagaWorkerType } from '@root/store/types';
+import { takeLatest } from 'redux-saga/effects';
+
+export default function* rootSaga(): SagaWorkerType<unknown> {
+  yield takeLatest(SagaPatternKey.SetPosts, SetPostsSagaWorker);
 }

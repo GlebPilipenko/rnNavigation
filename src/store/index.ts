@@ -1,8 +1,8 @@
-import {combineReducers, configureStore} from '@reduxjs/toolkit';
-import createSagaMiddleware from 'redux-saga';
+import { postsSlice } from './reducers';
+import { rootSagaWatcher } from './sagas';
 
-import {rootSagaWatcher} from './sagas';
-import {postsSlice} from './reducers';
+import { combineReducers, configureStore } from '@reduxjs/toolkit';
+import createSagaMiddleware from 'redux-saga';
 
 export const rootReducer = combineReducers({
   postsList: postsSlice.reducer,
@@ -11,9 +11,9 @@ export const rootReducer = combineReducers({
 const sagaMiddleware = createSagaMiddleware();
 
 export const store = configureStore({
-  reducer: rootReducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware().concat(sagaMiddleware),
+  reducer: rootReducer,
 });
 
 sagaMiddleware.run(rootSagaWatcher);

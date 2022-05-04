@@ -1,1 +1,1 @@
-export {RootDrawer} from './root/RootDrawer';
+export { RootDrawer } from './root/RootDrawer';

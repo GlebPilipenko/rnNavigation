@@ -1,1 +1,1 @@
-export {selectPosts} from './selectPosts';
+export { selectPosts } from './selectPosts';

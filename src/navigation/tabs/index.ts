@@ -1,1 +1,1 @@
-export {SettingTab} from './setting/SettingTab';
+export { SettingTab } from './setting/SettingTab';
